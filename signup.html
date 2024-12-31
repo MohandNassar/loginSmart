@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container my-5 ">
+        <div class="signIn box text-center m-auto p-5 w-75 ">
+            <h1 class="mb-5">Smart Login System</h1>
+            <div class="name mb-3">
+                <input id="userName" type="name" class=" form-control" placeholder="Enter Your Email">
+            </div>
+            <div class="email mb-3">
+                <input oninput="validateInput(this)" id="userEmail" type="email" class=" form-control" placeholder="Enter Your Email">
+                <div class="py-1 mt-2  d-none alert alert-danger">
+                    <small> Email must contain (.com)</small>
+                </div>
+            </div>
+            <div class="passWord mb-3">
+                <input oninput="validateInput(this)" id="userPassword" type="password"  class=" form-control" placeholder="Enter Your passWord">
+                <div class="py-1 mt-2  d-none alert alert-danger">
+                    <small> Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character</small>
+                </div>
+            </div>
+            <p id="alertMassage" class="d-none"></p>
+            <button  id="signUpBtn" type="submit" class="w-100 btn btn-outline-info login-btn my-3">signUp</button>
+            <p class="text-white ">You have an account? <a class="text-white" href="index.html">Sign in</a></p>
+
+
+        </div>
+    </div>
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/signUp.js"></script>
+</body>
+</html>
